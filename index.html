@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saving Balance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/custom.js">
+
+</head>
+
+<body class="bg-red-300">
+
+        <h2 class="text-center font-bold text-4xl text-uppercase m-8">Balance Statement</h2>
+        <div class=" flex justify-center space-x-2 m-2">
+            <div class="">
+                <img class="img-fluid h-[335px]" src="./img/360_F_407318477_srV9RonkLon0SbLPOZIq2PgTXPchRmsA-removebg-preview.png" alt="image" />
+            </div>
+           <div class="shadow-lg shadow-red-500 md:shadow-xl rounded-lg md:shadow-red-500 hover:shadow-indigo-500/40 h-[400px] w-[350px]">
+            <div class="justify-center">
+                <h2 class="text-center fw-bold m-4 text-uppercase">Income</h2>
+                <div class="flex justify-center m-2">
+                    <h1 class=" " for="#">Income: </h1>
+                 <input required id="salary" class="bg-slate-200 ml-2 rounded-lg" type="number" name="" id="" />
+                </div>
+                <h2 class="text-center fw-bold m-2 text-uppercase">Expenses</h2>
+            </div>
+            <div>
+                <div class="text-center ">
+                    <label class="" for="">Food :</label>
+                    <input required id="food" class="bg-slate-200 ml-4 rounded-lg" type="number" name="" id="" />
+                </div>
+                <div class="text-center mt-2">
+                    <label class="income_text" for="">Rent :</label>
+                    <input required id="rent" class="bg-slate-200 ml-5  rounded-lg" type="number" name="" id="" />
+                </div>
+                <div class="text-center mt-2 cloths">
+                    <label class="cloths_txt " for="">Cloths :</label>
+                    <input required id="cloths" class="bg-slate-200 ml-3 rounded-lg" type="number" name="" id="" />
+                </div>
+            </div>
+            
+            <div class="ml-28">
+                <input id="calculateBtn" class=" bg-orange-400 fw-bold rounded-lg w-28 m-2" type="button" value="Calculate">
+            </div>
+            <div class=" text-center m-2">
+                <h2>Total Expenses : <span id="totalExpenses"></span></h2>
+                <h2>Total Balance : <span id="totalBlance"></span></h2>
+            </div>
+            <div class="flex justify-center space-x-2">
+                <div class="">
+                    <label class="" for="">Save :</label>
+                    <input required id="saveingInt" class="bg-slate-200 w-16 rounded-lg" type="number" name="" id="">
+                </div>
+                <span style="">%</span>
+                <input id="saveingBtn" class="bg-orange-400 w-24 rounded-lg fw-bold" type="submit" value="Save">
+            </div>
+            <div class="text-center m-2">
+                <h2>Saving Amount : <span id="saveResult"></span></h2>
+                <h2>Remaing Balance : <span id="gantFinal"></span> </h2>
+            </div>
+           </div>
+        </div>
+        
+
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
